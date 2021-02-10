@@ -1,7 +1,26 @@
-@media screen and (max-width:700px){
+@media screen and (max-width: 500px){
+    .section-movies .container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-video iframe{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+
     header .container{
     display: flex;
     flex-direction: column;
+    }
+
+    header nav a{
+        margin-top: 100px;
+        font-size: 14px;
     }
 
     .botao{
@@ -9,16 +28,82 @@
         width: 300px;
     }
 
-}
-
-@media screen and (min-width:1000px){
-    .descricao{
-        width: 50%;
+    .section-titulo{
+        margin-bottom: 0;
     }
+
+    .section-video iframe{
+        margin-top: 10px;
+    }
+
+    .video{
+        top: 100px;
+        max-width: 10%;
+        min-height: 10%;
+    }
+
+    .container-single{
+        top: 55%;
+    }
+
+    .filme-principal .botao:nth-of-type(2){
+        display: none;
+    }
+
+    .botao{
+        width: 100%;
+    }
+
+    .carousel-filmes {
+        margin-top: 0px;
+    }
+
+    .filme-principal .descricao{
+        display: none;
+    }
+
+    .filme-principal .titulo{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .filme-principal{
+        margin-top: 0;
+        height: 380px;
+    }
+
 }
 
-@media screen and (min-width: 1500px){
+@media screen and (min-width: 1000px){
+    .descricao{
+        width: 70%;
+    }
+
+    .section-movies{
+        width: 100%;
+    }
+
+    .section-movies .container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+}
+
+@media screen and (min-width: 1300px){
     .filme-principal{
         height: 800px;
+    }
+
+    .video{
+        margin-top: 58px;
+    }
+
+}
+
+@media screen and (min-width: 2000px){
+    .carousel-filmes {
+        margin-top: 670px;
     }
 }

@@ -19,12 +19,13 @@
 
 	<header>
 		<div class="container">
-			<h2 class="logo">NETFLIX</h2>
+			<!-- <h2 class="logo">NETFLIX</h2> -->
+			<img class="logo" src="images/logo.png" alt="Logo Netflix">
 			<nav>
 				<a href="#">Início</a>
-				<a href="#">Séries</a>
-				<a href="#">Filmes</a>
-				<a href="#">Documentários</a>
+				<a href="#populares">Populares Netflix</a>
+				<a href="#continuar">Assistindo</a>
+				<a href="#lista">Minha Lista</a>
 			</nav>
 		</div><!--container-->
 	</header><!--header-->
@@ -32,22 +33,29 @@
 	<main>
 		<div class="filme-principal">
 			<div class="container">
-				<h3 class="titulo">House of Cards</h3>
-				<p class="descricao">Um político inescrupuloso não mede esforços para conquistar o poder nos EUA neste drama vencedor do Emmy e do Globo de Ouro. O congressista Francis Underwood e sua mulher, Claire, fazem de tudo para conquistar seus objetivos, não importa o que aconteça. Um mundo político recheado de ganância, corrupção e luxúria na capital Washington.</p>
-
-				<div class="botoes">
-					<button role="button" class="botao">
-						<i class="far fa-play-circle"></i> Assistir Agora
-					</button>
-					<button role="button" class="botao">
-						<i class="fas fa-info-circle"></i> Mais Detalhes
-					</button>
-				</div><!--botoes-->
+				<video autoplay loop class="video">
+					<source src="images/house.mp4" type="video/mp4" />
+				</video>
+				<div class="container-single">
+					<h3 class="titulo" >House of Cards</h3>
+					<p class="descricao">Um político inescrupuloso não mede esforços para conquistar o poder nos EUA neste drama vencedor do Emmy e do Globo de Ouro. O congressista Francis Underwood e sua mulher, Claire, fazem de tudo para conquistar seus objetivos, não importa o que aconteça. Um mundo político recheado de ganância, corrupção e luxúria na capital Washington.</p>
+					<div class="botoes">
+						<button role="button" class="botao">
+							<i class="far fa-play-circle"></i> Assistir Agora
+						</button>
+						<button role="button" class="botao">
+							<i class="fas fa-info-circle"></i> Mais Detalhes
+						</button>
+					</div><!--botoes-->
+			</div><!--container-single-->
 			</div><!--container-->
 		</div><!--filme-principal-->
 	</main><!--main-->
 
-	<div class="carousel-filmes">
+	<div class="carousel-filmes" id="populares">
+		<div class="container">
+			<h3 class="section-titulo">Populares Netflix</h3>
+		</div><!--container-->
 		<div class="owl-carousel owl-theme">
 			<div class="item">
 				<img class="box-filme" src="images/mini1.jpg">
@@ -81,6 +89,53 @@
 			</div><!--item-->
 		</div><!--owl-carousel owl-theme-->
 	</div><!--carousel-filmes-->
+
+	<div class="section-movies" id="continuar">
+		<div class="container">
+			<h3 class="section-titulo">Continuar Assistindo</h3>
+			<div class="section-video">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/saaFe2zZYbo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div><!--section-video-->
+		</div><!--container-->
+	</div><!--section-movies-->
+
+	<div class="section-movies" id="lista">
+		<div class="container">
+			<h3 class="section-titulo">Minha Lista</h3>
+			<div class="owl-carousel owl-theme">
+			<div class="item">
+				<img class="box-filme" src="images/mini11.jpg">
+			</div><!--item-->
+			<div class="item">
+				<img class="box-filme" src="images/mini12.jpg">
+			</div><!--item-->
+			<div class="item">
+				<img class="box-filme" src="images/mini13.jpg">
+			</div><!--item-->
+			<div class="item">
+				<img class="box-filme" src="images/mini14.jpg">
+			</div><!--item-->
+			<div class="item">
+				<img class="box-filme" src="images/mini15.jpg">
+			</div><!--item-->
+			<div class="item">
+				<img class="box-filme" src="images/mini16.jpg">
+			</div><!--item-->
+			<div class="item">
+				<img class="box-filme" src="images/mini17.jpg">
+			</div><!--item-->
+			<div class="item">
+				<img class="box-filme" src="images/mini18.jpg">
+			</div><!--item-->
+			<div class="item">
+				<img class="box-filme" src="images/mini19.jpg">
+			</div><!--item-->
+			<div class="item">
+				<img class="box-filme" src="images/mini20.jpg">
+			</div><!--item-->
+		</div><!--owl-carousel owl-theme-->
+		</div><!--container-->
+	</div><!--section-movies-->
 
 	<script src="https://kit.fontawesome.com/033bf27d02.js" crossorigin="anonymous"></script>
 	<script src="js/owl/jquery.min.js"></script>
